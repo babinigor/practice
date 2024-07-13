@@ -54,15 +54,15 @@ class App extends Component {
     const { notes } = this.state;
     return (
       <div className="App">
-        <h2>Todo App</h2>
+        <h2>Заметки</h2>
         <input id="newNotes" />
         &nbsp;
-        <button onClick={() => this.addClick()}>AddNotes</button>
+        <button onClick={() => this.addClick()}>Добавить заметку</button>
         {notes.map((note) => (
           <p>
             <b>{note.description}</b>&nbsp;
             <button onClick={() => this.deleteClick(note.id)}>
-              DeleteNotes
+              Удалить заметку
             </button>
           </p>
         ))}
