@@ -54,7 +54,7 @@ class App extends Component {
     const { notes } = this.state;
     return (
       <div className="App">
-        <h2>Todo App new</h2>
+        <h2>Todo App</h2>
         <input id="newNotes" />
         &nbsp;
         <button onClick={() => this.addClick()}>AddNotes</button>
